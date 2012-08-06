@@ -1,0 +1,27 @@
+<html>
+
+    <head>
+        <title>Fruit Cup</title>
+    </head>
+    
+    <body>
+        
+        <h1 style="text-align:center">
+            Fruit Cup
+        </h1>
+        
+        <ul>
+            <li>1 (15.25 ounce) can fruit cocktail, drained</li>
+			<li>1 medium tart apple, diced</li>
+			<li>1/2 cup miniature marshmallows</li>
+			<li>1/2 cup whipped topping</li>
+        </ul>
+    
+        <ol>
+            <li>In a bowl, combine all ingredients. Cover and refrigerate until serving.</li>
+		</ol>
+        <a href="http://allrecipes.com/recipe/gooey-butter-cake-ii/detail.aspx?event8=1&prop24=SR_Title&e11=cake&e8=Quick%20Search&event10=1&e7=Recipe">Recipe from Allrecipes.com</a>
+    </body>
+    
+</html>
+

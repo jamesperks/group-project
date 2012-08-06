@@ -1,0 +1,63 @@
+<html>
+
+    <head>
+		<title>Dessert Recipes</title>
+		
+		<!-- iphone settings -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<!-- include stylesheet(s) -->
+		<link type="text/css" rel="stylesheet" href="stylesheets/1.css" />
+		<link type="text/css" rel="stylesheet" href="stylesheets/transitions.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
+		
+		<!-- include javascripts -->
+		<script type="text/javascript" src="javascripts/vendor/modernizr-1.7.min.js"></script>
+		<script src="javascripts/vendor/helper.js"></script>
+		<script src="javascripts/basic.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+	</head>
+    
+    <body>
+    <div data-role="page" data-theme="b">
+    	<div id="header" class="left" data-role="header" data-theme="b">    
+		    <h1 style="text-align:center">
+		        S'mores
+		    </h1>
+        </div>
+        <!-- end header div -->
+		
+		<!-- clear divs -->
+		<div class="clear">
+		
+		<!-- recipes div -->
+		<div id="recipes" class="left" data-role="content">
+			<h3>Ingredients</h3>
+		    <ul data-role="listview" data-inset="true">
+		        <li>8 whole graham crackers</li>
+				<li>1 (19.8 ounce) package fudge brownie mix</li>
+				<li>2 cups miniature marshmallows</li>
+				<li>1 cup semisweet chocolate chips</li>
+				<li>2/3 cup chopped peanuts</li>
+		    </ul>
+		
+		    <ol>
+		        <li>Arrange graham crackers in a single layer in a greased 13-in. x 9-in. x 2-in. baking pan. Prepare the brownie batter according to package directions. Spread over crackers. Bake at 350 degrees F for 25-30 minutes or until a toothpick inserted near the center comes out clean. Sprinkle with marshmallows, chocolate chips and peanuts. Bake 5 minutes longer or until marshmallows are slightly puffed and golden brown. Cool on a wire rack before cutting.</li>
+			</ol>
+		    <a href="http://allrecipes.com/recipe/gooey-butter-cake-ii/detail.aspx?event8=1&prop24=SR_Title&e11=cake&e8=Quick%20Search&event10=1&e7=Recipe">Recipe from Allrecipes.com</a>
+		</div>
+        
+        <!-- clear divs -->
+		<div class="clear">
+		
+		<div id="footer" class="left" data-role="footer" data-theme="b">
+			<a href="../index.html">View all recipes</a>
+		</div>
+    </div>
+    </body>
+    
+</html>
+

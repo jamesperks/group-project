@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+		<title>Dessert Recipes</title>
+		
+		<!-- iphone settings -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<!-- include stylesheet(s) -->
+		<link type="text/css" rel="stylesheet" href="stylesheets/1.css" />
+		<link type="text/css" rel="stylesheet" href="stylesheets/transitions.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
+		
+		<!-- include javascripts -->
+		<script type="text/javascript" src="javascripts/vendor/modernizr-1.7.min.js"></script>
+		<script src="javascripts/vendor/helper.js"></script>
+		<script src="javascripts/basic.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+	</head>
+    
+    <body>
+    <div data-role="page" data-theme="b">
+    	<div id="header" class="left" data-role="header" data-theme="b">    
+		    <h1 style="text-align:center">
+		        Fruit Cup
+		    </h1>
+		</div>
+        <!-- end header div -->
+		
+		<!-- clear divs -->
+		<div class="clear">
+		
+		<!-- recipes div -->
+		<div id="recipes" class="left" data-role="content">
+			<h3>Ingredients</h3>
+		    <ul data-role="listview" data-inset="true">
+		        <li>1 (15.25 ounce) can fruit cocktail, drained</li>
+				<li>1 medium tart apple, diced</li>
+				<li>1/2 cup miniature marshmallows</li>
+				<li>1/2 cup whipped topping</li>
+		    </ul>
+		
+		    <ol>
+		        <li>In a bowl, combine all ingredients. Cover and refrigerate until serving.</li>
+			</ol>
+		    <a href="http://allrecipes.com/recipe/mallow-fruit-cups/detail.aspx?event8=1&prop24=SR_Title&e11=fruit%20cup&e8=Quick%20Search&event10=1&e7=Recipe">Recipe from Allrecipes.com</a>
+		</div>
+        
+        <!-- clear divs -->
+		<div class="clear">
+		
+		<div id="footer" class="left" data-role="footer" data-theme="b">
+			<a href="../index.html">View all recipes</a>
+		</div>
+    </div>
+    </body>
+    
+</html>
+

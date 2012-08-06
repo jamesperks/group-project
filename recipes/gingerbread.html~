@@ -1,0 +1,71 @@
+<html>
+
+    <head>
+		<title>Dessert Recipes</title>
+		
+		<!-- iphone settings -->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<!-- include stylesheet(s) -->
+		<link type="text/css" rel="stylesheet" href="stylesheets/1.css" />
+		<link type="text/css" rel="stylesheet" href="stylesheets/transitions.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
+		
+		<!-- include javascripts -->
+		<script type="text/javascript" src="javascripts/vendor/modernizr-1.7.min.js"></script>
+		<script src="javascripts/vendor/helper.js"></script>
+		<script src="javascripts/basic.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+	</head>
+    
+    <body>
+    <div data-role="page" data-theme="b">
+    	<div id="header" class="left" data-role="header" data-theme="b">    
+		    <h1 style="text-align:center">
+		        Gingerbread Cookies
+		    </h1>
+		</div>
+        <!-- end header div -->
+		
+		<!-- clear divs -->
+		<div class="clear">
+		
+		<!-- recipes div -->
+		<div id="recipes" class="left" data-role="content">
+			<h3>Ingredients</h3>
+		    <ul data-role="listview" data-inset="true">
+		        <li>1 cup all-purpose flour, divided</li>
+				<li>1 cup brown sugar</li>
+				<li>3/4 cup shortening</li>
+				<li>1/4 cup molasses</li>
+				<li>1 egg</li>
+				<li>1 teaspoon baking soda</li>
+				<li>1 teaspoon ground ginger</li>
+				<li>1 teaspoon ground cinnamon</li>
+				<li>1/2 teaspoon ground cloves</li>
+				<li>1 1/4 cups all-purpose flour</li>
+				<li>1/4 cup white sugar</li>
+			</ul>
+		
+		    <ol>
+		        <li>Preheat oven to 375 degrees F (190 degrees C).</li>
+				<li>Beat 1 cup flour, brown sugar, shortening, molasses, egg, baking soda, ginger, cinnamon, and cloves in a large bowl until thoroughly combined; stir in remaining 1 1/4 cup flour. Shape dough into 1-inch balls and roll in white sugar; place 2 inches apart on an ungreased baking sheet.</li>
+				<li>Bake in preheated oven until cookies are set and tops are crackled, 8 to 10 minutes.</li>
+		    </ol>
+		    <a href="http://allrecipes.com/recipe/soft-gingersnaps-2/detail.aspx">Recipe from Allrecipes.com</a>
+		</div>
+        
+        <!-- clear divs -->
+		<div class="clear">
+		
+		<div id="footer" class="left" data-role="footer" data-theme="b">
+			<a href="../index.html">View all recipes</a>
+		</div>
+    </div>
+    </body>
+    
+</html>
+
