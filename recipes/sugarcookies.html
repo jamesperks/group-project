@@ -10,7 +10,6 @@
 		
 		<!-- include stylesheet(s) -->
 		<link type="text/css" rel="stylesheet" href="stylesheets/1.css" />
-		<link type="text/css" rel="stylesheet" href="stylesheets/transitions.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
 		
 		<!-- include javascripts -->
@@ -23,7 +22,8 @@
     
     <body>
     <div data-role="page" data-theme="b">
-    	<div id="header" class="left" data-role="header" data-theme="b">    
+    	<div id="header" class="left" data-role="header" data-theme="b">
+    		<a href="../index.html" data-icon="back">Back</a>    
 		    <h1 style="text-align:center">
 		        Soft Sugar Cookies
 		    </h1>
@@ -50,7 +50,7 @@
 				<li>4 cups all-purpose flour</li>
 				<li>1 teaspoon ground nutmeg</li>
 		    </ul>
-		
+		    <a href="" id="find">Find ingredients by me</a>
 		    <h3>Directions</h3>
 		    <ol data-role="listview" data-inset="true">
 		        <li>Combine milk with vinegar to make sour milk. Let stand for 5 minutes.</li>
@@ -73,4 +73,11 @@
     </body>
     
 </html>
-
+<script>
+navigator.geolocation.getCurrentPosition (function (pos)
+{
+  var lat = pos.coords.latitude;
+  var lng = pos.coords.longitude;
+  $("a#find").attr('href', 'https://maps.google.com/maps?q=grocery store&hl=en&sll=' + lat + ',' + lng + '&sspn=0.013044,0.017896&gl=us&hq=supermarkets&t=m&z=16');
+});
+</script>

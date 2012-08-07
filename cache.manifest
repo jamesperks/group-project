@@ -1,0 +1,21 @@
+CACHE MANIFEST
+# v0.1
+index.html
+stylesheets/1.css
+stylesheets/transitions.css
+javascripts/vendor/modernizr-2.5.3.js
+javascripts/vendor/helper.js
+javascripts/basic.js
+recipes/buttercake.html
+recipes/chocolateicecream.html
+recipes/cookies.html
+recipes/fruitcup.html
+recipes/gingerbread.html
+recipes/icedcoffee.html
+recipes/peanutbutterandjelly.html
+recipes/peanutcookies.html
+recipes/smores.html
+recipes/strawberryicecream.html
+recipes/sugarcookies.html
+recipes/vanillaicecream.html
+

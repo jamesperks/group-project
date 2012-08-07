@@ -10,7 +10,6 @@
 		
 		<!-- include stylesheet(s) -->
 		<link type="text/css" rel="stylesheet" href="stylesheets/1.css" />
-		<link type="text/css" rel="stylesheet" href="stylesheets/transitions.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
 		
 		<!-- include javascripts -->
@@ -23,7 +22,8 @@
     
     <body>
     <div data-role="page" data-theme="b">
-    	<div id="header" class="left" data-role="header" data-theme="b">    
+    	<div id="header" class="left" data-role="header" data-theme="b">
+    		<a href="../index.html" data-icon="back">Back</a>    
 		    <h1 style="text-align:center">
 		        Soft Sugar Cookies
 		    </h1>
@@ -51,7 +51,8 @@
 				<li>1 teaspoon ground nutmeg</li>
 		    </ul>
 		
-		    <ol>
+		    <h3>Directions</h3>
+		    <ol data-role="listview" data-inset="true">
 		        <li>Combine milk with vinegar to make sour milk. Let stand for 5 minutes.</li>
 				<li>In a large mixing bowl, combine sugars, shortening, eggs, and vanilla. Add flour, soda, baking powder, salt, and nutmeg.</li>
 	   			<li>Stir in sour milk and mix well. NOTE: Dough will be very sticky and hard to handle. You could refrigerate it for a few hours, or just use plenty of flour when rolling out.</li>
@@ -72,4 +73,11 @@
     </body>
     
 </html>
-
+<script>
+navigator.geolocation.getCurrentPosition (function (pos)
+{
+  var lat = pos.coords.latitude;
+  var lng = pos.coords.longitude;
+  $("a#find").attr('href', 'https://maps.google.com/maps?q=grocery store&hl=en&sll=' + lat + ',' + lng + '&sspn=0.013044,0.017896&gl=us&hq=supermarkets&t=m&z=16');
+});
+</script>

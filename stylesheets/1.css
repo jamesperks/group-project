@@ -28,12 +28,21 @@ body
 	margin:0 auto;
 }
 
+#recipes
+{
+	width:90%;
+}
+
 .list
 {
-	display: block
+	
+}
+
+.list li
+{
+	display: block;
 	text-overflow: ellipsis;
 	overflow: hidden;
-
 }
 
 .left

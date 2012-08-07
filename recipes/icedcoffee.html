@@ -10,7 +10,6 @@
 		
 		<!-- include stylesheet(s) -->
 		<link type="text/css" rel="stylesheet" href="stylesheets/1.css" />
-		<link type="text/css" rel="stylesheet" href="stylesheets/transitions.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
 		
 		<!-- include javascripts -->
@@ -23,7 +22,8 @@
     
     <body>
     <div data-role="page" data-theme="b">
-    	<div id="header" class="left" data-role="header" data-theme="b">    
+    	<div id="header" class="left" data-role="header" data-theme="b">
+    		<a href="../index.html" data-icon="back">Back</a>    
 		    <h1 style="text-align:center">
 		        Iced Coffee
 		    </h1>
@@ -44,7 +44,7 @@
 				<li>1/2 cup milk</li>
 				<li>1 tablespoon chocolate syrup</li>
 		    </ul>
-		
+		    <a href="" id="find">Find ingredients by me</a>
 		    <h3>Directions</h3>
 		    <ol data-role="listview" data-inset="true">
 		        <li>In a small bowl, stir together the water and instant coffee. In a blender, combine ice cubes, coffee mixture, milk, sweetened condensed milk and chocolate syrup. Blend until smooth. Pour into glasses and serve.</li>
@@ -62,4 +62,11 @@
     </body>
     
 </html>
-
+<script>
+navigator.geolocation.getCurrentPosition (function (pos)
+{
+  var lat = pos.coords.latitude;
+  var lng = pos.coords.longitude;
+  $("a#find").attr('href', 'https://maps.google.com/maps?q=grocery store&hl=en&sll=' + lat + ',' + lng + '&sspn=0.013044,0.017896&gl=us&hq=supermarkets&t=m&z=16');
+});
+</script>

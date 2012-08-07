@@ -28,16 +28,16 @@ body
 	margin:0 auto;
 }
 
+#recipes
+{
+	width:90%;
+}
+
 .list
 {
-	-webkit-border-radius: 0.143em;
-	-moz-border-radius: 0.143em;
-	border-radius: 0.143em;
-	border: 1px #fff solid;
-	display: block
+	display: block;
 	text-overflow: ellipsis;
 	overflow: hidden;
-
 }
 
 .left

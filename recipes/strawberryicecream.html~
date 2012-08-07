@@ -10,7 +10,6 @@
 		
 		<!-- include stylesheet(s) -->
 		<link type="text/css" rel="stylesheet" href="stylesheets/1.css" />
-		<link type="text/css" rel="stylesheet" href="stylesheets/transitions.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.css" />
 		
 		<!-- include javascripts -->
@@ -23,7 +22,8 @@
     
     <body>
     <div data-role="page" data-theme="b">
-    	<div id="header" class="left" data-role="header" data-theme="b">    
+    	<div id="header" class="left" data-role="header" data-theme="b">
+    		<a href="../index.html" data-icon="back">Back</a>    
 		    <h1 style="text-align:center">
 		        Strawberry Ice Cream
 		    </h1>
@@ -44,7 +44,8 @@
 				<li>1 1/2 cups heavy cream</li>
 		    </ul>
 		
-		    <ol>
+		    <h3>Directions</h3>
+		    <ol data-role="listview" data-inset="true">
 		        <li>Place berries in blender. Whisk sugar into cream. With blender going, slowly add cream through opening in lid, stopping to stir the mixture 3 or 4 times so the ice cream is smooth, with small bits of berries.</li>
 				<li>Transfer to shallow pan and freeze to a scoopable texture, about 2 hours. Garnish with fresh strawberries, if you like.</li>
 		    </ol>
@@ -61,4 +62,11 @@
     </body>
     
 </html>
-
+<script>
+navigator.geolocation.getCurrentPosition (function (pos)
+{
+  var lat = pos.coords.latitude;
+  var lng = pos.coords.longitude;
+  $("a#find").attr('href', 'https://maps.google.com/maps?q=grocery store&hl=en&sll=' + lat + ',' + lng + '&sspn=0.013044,0.017896&gl=us&hq=supermarkets&t=m&z=16');
+});
+</script>
